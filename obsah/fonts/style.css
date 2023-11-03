@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'jazykovFont';
+  src:
+    url('fonts/jazykovFont.ttf?alvitw') format('truetype'),
+    url('fonts/jazykovFont.woff?alvitw') format('woff'),
+    url('fonts/jazykovFont.svg?alvitw#jazykovFont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.jazykovFont {
+  font-family: jazykovFont, fantasy;
+  color: #f7df1e;
+  line-height: 1;
+  letter-spacing: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'jazykovFont' !important;
+  
+  
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-email:before {
+  content: "\e945";
+}
+.icon-mobile:before {
+  content: "\e958";
+}
+.icon-pozice:before {
+  content: "\e976";
+}
